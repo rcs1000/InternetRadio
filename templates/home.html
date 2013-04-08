@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <title>Internet Radio</title>
+</head>
+<body>
+<link rel="apple-touch-icon" href="/img/radio_256.png"/>
+<table
+ style="text-align: center; margin-left: auto; margin-right: auto; font-family: Helvetica,Arial,sans-serif; font-weight: bold; width: 330px;"
+ border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr align="center">
+      <td style="width: 320px;"><span style="">Robert's Internet Radio</span><br>
+    </tr>
+    <tr align="center">
+      <td><img src="/img/radio_256.png" width="200px" height="200px"></td>
+
+      <br>
+    </tr>
+
+
+    <tr align="center">
+      <td style="width: 320px;"><a href="/next"><span style="font-family: Helvetica,Arial,sans-serif; font-weight: normal;">
+      {% for station in stations %}
+        <p><a href="{{ station.url }}">{{ station.text }}</a></p>
+      {% endfor %}
+      </span></a> <br>
+      <br>
+      </td>
+    </tr>
+    <tr align="center">
+      <td style="width: 320px;"><span
+ style="font-family: Helvetica,Arial,sans-serif; font-weight: normal;">Edit Channel Lists<br>
+      <br>
+      <br>
+      <br>
+      </span><span style="font-weight: normal;"></span></td>
+    </tr>
+  </tbody>
+</table>
+<br style="font-weight: bold;">
+</body>
+</html>
